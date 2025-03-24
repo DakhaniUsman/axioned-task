@@ -1,87 +1,84 @@
-# Welcome to React Router!
+ Blog Page - React Project
 
-A modern, production-ready template for building full-stack React applications using React Router.
+ 🚀 Project Overview
+This is a **React-based Blog Page** that fetches and displays blog posts from the JSONPlaceholder API. The application includes:
+- **Pagination** ✅
+- **Search Functionality** ✅
+- **Filtering & Sorting** (by Title and ID) ✅
+- **Responsive UI using Tailwind CSS** ✅
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
-## Features
-
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
-
-## Getting Started
-
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+ 🛠️ Tech Stack
+- **React.js** (for UI components)
+- **Axios** (for fetching data)
+- **Tailwind CSS** (for styling)
+- **JSONPlaceholder API** (dummy data)
 
 ---
 
-Built with ❤️ using React Router.
+ 📌 Features Implemented
+ 1️⃣ Data Fetching
+- Used `useEffect` to fetch data from JSONPlaceholder API
+- Managed loading state during API calls
+
+ 2️⃣ Pagination
+- Dynamically displays page numbers
+- Highlights the current page
+- Handles "Previous" and "Next" navigation
+
+ 3️⃣ Search Functionality
+- Allows users to search for blog posts by **title** or **body**
+- Filters posts **dynamically as user types**
+
+ 4️⃣ Sorting Feature
+- Users can **sort posts** by:
+  - **Title (A-Z, Z-A)**
+  - **ID (Ascending, Descending)**
+- Uses `sort()` to arrange data efficiently
+
+ 5️⃣ Filter & Dropdown
+- Sorting dropdown integrated with `onChange` event
+- Controlled via **React state**
+
+---
+
+ 📥 Installation & Running Locally
+
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/your-username/blog-page.git
+   cd blog-page
+   ```
+
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
+
+3. **Start the Development Server**
+   ```sh
+   npm run dev
+   ```
+
+4. **Open in Browser**
+   - Visit **`http://localhost:5173`** (or the port Vite assigns)
+
+---
+
+ 🔗 API Used
+- **[JSONPlaceholder](https://jsonplaceholder.typicode.com/posts)** (Dummy Blog Data)
+
+
+---
+
+ 🤝 Contributing
+Feel free to **fork the repo** and submit pull requests for improvements! 🚀
+
+---
+
+ 📝 License
+This project is **open-source** under the MIT License.
+
+---
+
+🔥 **Made with ❤️ by Dakhani Usman**
+
